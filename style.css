@@ -1,0 +1,127 @@
+h2 {
+  color: coral;
+}
+#chat {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow-y: auto;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 10px;
+}
+#users {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  overflow-y: auto;
+  padding: 10px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 60%;
+  display: flex;
+  gap: 5px;
+}
+.message.received {
+  background-color: lightgrey;
+  align-self: flex-start;
+  text-align: left;
+  width: 50%;
+}
+.message.sent {
+  background-color: lightblue;
+  align-self: flex-end;
+  text-align: right;
+  width: 50%;
+}
+.timestamp {
+  color: gray;
+  font-size: 0.8em;
+}
+.username {
+  font-weight: bold;
+}
+.container1 {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  gap: 10px;
+}
+.container1 input {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: antiquewhite;
+  cursor: pointer;
+}
+.container1 button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  border: 1px solid coral;
+  cursor: pointer;
+  margin: 10px;
+}
+.container2 {
+  width: 20%;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+.container3_block1 {
+  display: flex;
+  height: 500px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.container3 button {
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  border: 1px solid coral;
+  margin: auto;
+  cursor: pointer;
+}
+.container_main {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 80%;
+  gap: 10px;
+}
+.container3_block2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px auto;
+  overflow-wrap: break-word;
+}
+.container3 textarea {
+  width: 70%;
+  min-height: 50px;
+  max-height: 150px;
+  resize: none;
+  border-radius: 10px;
+  border-color: coral;
+  margin: auto;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
